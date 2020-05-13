@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 11fabd1fa4957410819e09cc90a3ebde5ae6e7c06562ce37c8878c35b7172f3d
+-- hash: 35f203adf4a1e36257f7b87833bac21a6972defbc68f0c59d89b281f64543ed5
 
 name:           tutorial
 version:        0.1.0.0
@@ -30,6 +30,7 @@ library
       DoubleMe
       Lib
       ListTutorial
+      TypeClassesTut
   other-modules:
       Paths_tutorial
   hs-source-dirs:
