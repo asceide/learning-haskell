@@ -25,7 +25,7 @@ fst :: (a, b) -> a  --This function takes a tuple of any type, and returns somet
 --A type class is a sort of interface that defines a behavior. If a type is of a typeclass, that means it supports and implements the behavior that a typeclass describes.!!
 --Examples
 -- == is a function much like * + - / . If a function is comprised by special characters, then it is considered an infix function by default. In order to examine its type, pass it to another function, or call it as a prefix function, it must be surrounded by paranthesis. 
-(==) :: (Eq a) => a -> a -> Bool -- Everything before => is read as a class constraint. It can be read as follows: this function takes in two parameters of the same time and returns a boolean. The two values MUST be part of the Eq class (this is the class constraint). All Haskell type except for IO and functions are part of the Eq class
+(==) :: (Eq a) => a -> a -> Bool -- Everything before => is read as a class constraint. It can be read as follows: function == has a type of : this function takes in two parameters of the same time and returns a boolean. The two values MUST be part of the Eq class (this is the class constraint). All Haskell type except for IO and functions are part of the Eq class
 --Elem has a function type of (Eq a) => a -> [a] -> Bool because it uses == to check the values in the list.
 --Typeclasses
 --Eq is used for equality testing == is /= is not. If Eq is used as a type contraint, it is uses == or /= somewhere in its definition.!! 
